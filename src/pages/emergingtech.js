@@ -112,7 +112,7 @@ function EmergingTech() {
                         <Grid xs={6} className="vr-container-2 b-2">
                             <Canvas>
                                 <Suspense>
-                                    <Converse scale={6} />
+                                    <Sweater scale={6} />
 
                                     {/*PLEASE READ (6/10/2023)
                                         There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
