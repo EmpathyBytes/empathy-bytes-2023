@@ -161,7 +161,7 @@ function EmergingTech() {
                         {/* I would recommend following this structure for importing future models - Jacob */}
                         <Canvas>
                             <Suspense>
-                                <BuzzPlaque scale={3.5} />
+                                <Converse scale={6} />
 
                                 {/*PLEASE READ (6/10/2023)
                                     There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
