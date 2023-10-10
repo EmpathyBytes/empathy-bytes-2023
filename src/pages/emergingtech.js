@@ -129,10 +129,11 @@ function EmergingTech() {
 
                 </Grid>
 
-                <Grid container spacing={2} className="bg-1">
+                <Grid> container spacing={2} className="bg-1">
                     
                     <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
                         <h1>Sweater</h1>
+                    </Grid>
                     </Grid>
 
 
