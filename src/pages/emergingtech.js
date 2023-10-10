@@ -7,8 +7,8 @@ import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
 
 import BuzzPlaque from "../components/canvas/buzzplaque";
-// import Football from "../components/canvas/football";
-// import Sweater from "../components/canvas/tSweater";
+import Football from "../components/canvas/football";
+import Sweater from "../components/canvas/tSweater";
 import Converse from "../components/canvas/rightconverse";
 
 import Grid from '@mui/material/Unstable_Grid2';
@@ -143,7 +143,7 @@ function EmergingTech() {
                         {/* I would recommend following this structure for importing future models - Jacob */}
                         <Canvas>
                             <Suspense>
-                                <BuzzPlaque scale={3.5} />
+                                <Sweater scale={3.5} />
 
                                 {/*PLEASE READ (6/10/2023)
                                     There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
@@ -161,7 +161,7 @@ function EmergingTech() {
                         {/* I would recommend following this structure for importing future models - Jacob */}
                         <Canvas>
                             <Suspense>
-                                <Converse scale={6} />
+                                <Football scale={6} />
 
                                 {/*PLEASE READ (6/10/2023)
                                     There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
