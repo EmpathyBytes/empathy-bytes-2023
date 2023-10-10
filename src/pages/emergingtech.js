@@ -138,47 +138,11 @@ function EmergingTech() {
                         <h1>Football</h1>
                     </Grid>
 
-                    {/* Loading 3D Models */}
-                    <Grid xs={6} className="vr-container-3 b-3">
-                        {/* I would recommend following this structure for importing future models - Jacob */}
-                        <Canvas>
-                            <Suspense>
-                                <Sweater scale={6} />
-
-                                {/*PLEASE READ (6/10/2023)
-                                    There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
-                                    For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
-                                - Jacob Amin */}
-
-                                {/* <Environment /> */}
-                                <ambientLight />
-                                <OrbitControls />
-                            </Suspense>
-                        </Canvas>
-                    </Grid>
-
-                    <Grid xs={6} className="vr-container-4 b-4">
-                        {/* I would recommend following this structure for importing future models - Jacob */}
-                        <Canvas>
-                            <Suspense>
-                                <Football scale={6} />
-
-                                {/*PLEASE READ (6/10/2023)
-                                    There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
-                                    For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
-                                - Jacob Amin */}
-
-                                {/* <Environment /> */}
-                                <ambientLight />
-                                <OrbitControls />
-                            </Suspense>
-                        </Canvas>
-                    </Grid>
 
                     </Grid>
 
 
-                <Grid container spacing={4} className="" style={{padding: "2% 0 2% 0"}}>
+                <Grid container spacing={2} className="" style={{padding: "2% 0 2% 0"}}>
                     <Grid xs={6} container className="right-align-experiences" alignItems="center" justifyContent="center" direction="column">
                         <h1 className="sub-header-experiences">Spring 2023 Progress</h1>
                     </Grid>
