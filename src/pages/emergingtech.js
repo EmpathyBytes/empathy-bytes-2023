@@ -78,7 +78,7 @@ function EmergingTech() {
 
                 </Grid>
 
-                <Grid container spacing={3} className="bg-1">
+                <Grid container spacing={2} className="bg-1">
                     
                     <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
                         <h1>Buzz's Plaque</h1>
@@ -88,9 +88,9 @@ function EmergingTech() {
                         <h1>Buzz's Right Converse</h1>
                     </Grid>
 
-                    <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
+                   {/* <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
                         <h1>Sweater</h1>
-                    </Grid>
+    </Grid>  */}
 
                     {/* Loading 3D Models */}
                     <Grid xs={6} className="vr-container-1 b-1">
@@ -128,7 +128,9 @@ function EmergingTech() {
                             </Canvas>
                         </Grid>
 
-                        <Grid xs={6} className="vr-container-3 b-3">
+                        {/*Issue adding sweater, with positions; need to learn more jaavscript*/}
+                        
+                        {/* <Grid xs={6} className="vr-container-3 b-3">
                             <Canvas>
                                 <Suspense>
                                     <t_sweater scale={3.5} />
@@ -138,13 +140,12 @@ function EmergingTech() {
                                         For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
                                     - Jacob Amin */}
 
-                                    {/* <Environment /> */}
+                                    {/* <Environment /> */} {/*}
                                     <ambientLight />
                                     <OrbitControls />
                                 </Suspense>
                             </Canvas>
-                        </Grid>
-            
+                        </Grid> */}
 
                 </Grid>
 
