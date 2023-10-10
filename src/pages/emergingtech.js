@@ -7,7 +7,7 @@ import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
 
 import BuzzPlaque from "../components/canvas/buzzplaque";
-import Football from "../components/canvas/football";
+//import Football from "../components/canvas/football";
 //import Sweater from "../components/canvas/tSweater";
 import Converse from "../components/canvas/rightconverse";
 
