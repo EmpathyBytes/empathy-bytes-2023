@@ -88,6 +88,10 @@ function EmergingTech() {
                         <h1>Buzz's Right Converse</h1>
                     </Grid>
 
+                    <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
+                        <h1>Sweater</h1>
+                    </Grid>
+
                     {/* Loading 3D Models */}
                     <Grid xs={6} className="vr-container-1 b-1">
                         {/* I would recommend following this structure for importing future models - Jacob */}
@@ -123,6 +127,24 @@ function EmergingTech() {
                                 </Suspense>
                             </Canvas>
                         </Grid>
+
+                        <Grid xs={6} className="vr-container-3 b-3">
+                            <Canvas>
+                                <Suspense>
+                                    <t_sweater scale={6} />
+
+                                    {/*PLEASE READ (6/10/2023)
+                                        There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
+                                        For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
+                                    - Jacob Amin */}
+
+                                    {/* <Environment /> */}
+                                    <ambientLight />
+                                    <OrbitControls />
+                                </Suspense>
+                            </Canvas>
+                        </Grid>
+            
 
                 </Grid>
 
