@@ -141,7 +141,7 @@ function EmergingTech() {
                     <Grid xs={6} className="vr-container-3 b-3">
                             <Canvas>
                                 <Suspense>
-                                    <Football scale={3.5} />
+                                    <BuzzPlaque scale={3.5} />
 
                                     {/*PLEASE READ (6/10/2023)
                                         There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
