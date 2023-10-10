@@ -143,7 +143,7 @@ function EmergingTech() {
                         {/* I would recommend following this structure for importing future models - Jacob */}
                         <Canvas>
                             <Suspense>
-                                <Sweater scale={3.5} />
+                                <Sweater scale={6} />
 
                                 {/*PLEASE READ (6/10/2023)
                                     There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
@@ -178,7 +178,7 @@ function EmergingTech() {
                     </Grid>
 
 
-                <Grid container spacing={2} className="" style={{padding: "2% 0 2% 0"}}>
+                <Grid container spacing={4} className="" style={{padding: "2% 0 2% 0"}}>
                     <Grid xs={6} container className="right-align-experiences" alignItems="center" justifyContent="center" direction="column">
                         <h1 className="sub-header-experiences">Spring 2023 Progress</h1>
                     </Grid>
