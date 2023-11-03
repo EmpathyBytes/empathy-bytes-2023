@@ -47,10 +47,9 @@ Article.propTypes = {
 };
 
 export const query = graphql`
-    query($ArticleId: String!) {
-        nodeArticle(id: { eq: $ArticleId }) {
+query ($TagName: String!) {
+    nodeArticle(relationships: { field_tags: { elemMatch: { name: { eq: $TagName } } } }) {
         field_author
-        
         field_hg_dateline
         id
         title

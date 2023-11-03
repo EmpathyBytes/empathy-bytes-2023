@@ -52,7 +52,7 @@ exports.createPages = async ({actions, graphql}) => {
             path: articleData.path.alias,
             component: path.resolve(`src/templates/article.js`),
             context: {
-                ArticleId: articleData.id,
+                TagName : articleData.field_tag,
             },
         })
     );
