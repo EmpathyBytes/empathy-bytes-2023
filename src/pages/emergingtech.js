@@ -181,6 +181,7 @@ function EmergingTech() {
                 </Grid>
 
 
+
                 <Grid container spacing={2} className="" style={{padding: "2% 0 2% 0"}}>
                     <Grid xs={6} container className="right-align-experiences" alignItems="center" justifyContent="center" direction="column">
                         <h1 className="sub-header-experiences">Spring 2023 Progress</h1>
