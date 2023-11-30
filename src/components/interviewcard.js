@@ -35,7 +35,7 @@ import { CardActionArea } from '@mui/material';
 // }
 
 export default function InterviewCard(props) {
-    const matches = useMediaQuery('(min-width:600px)');
+    const matches = useMediaQuery('(min-width:800px)');
     if (matches) {
         return (
             <section className="int_card">
@@ -50,10 +50,9 @@ export default function InterviewCard(props) {
                                 <img className="img-style" src={props.img}/>
                             </Grid>
                             <Grid item xs={8}>
-                                <h2>{props.title}</h2>
+                                <h2 className="ep_title">{props.title}</h2>
                                 <p>By {props.author}</p>
                                 <div className = "summary" dangerouslySetInnerHTML={{ __html: props.body}}/>
-                                {/* <Link to={props.url}>Learn More</Link> */}
                                 <p>{props.date}</p>
                             </Grid>
 
@@ -72,40 +71,19 @@ export default function InterviewCard(props) {
                             alignItems="center"
                         >
                             <Grid item xs={4}>
-                                {/* <Link to={props.url} style={{textDecoration:"none", color:"inherit"}}> */}
                                     <img className="img-style" src={props.img}/>
-                                {/* </Link> */}
                             </Grid>
                             <Grid item xs={8}>
-                                <h2>{props.title}</h2>
+                                <h2 className="ep_title">{props.title}</h2>
                                 <p>By {props.author}</p>
                             </Grid>
                             <Grid item xs={12}>                
                                 <div className="summary" dangerouslySetInnerHTML={{ __html: props.body}}/>
-                                {/* <Link to={props.url}>Learn More</Link> */}
                                 <p>{props.date}</p>               
                             </Grid>
                         </Grid>
                     </CardActionArea>
                 </Link>
-                
-                {/* <Grid //component borrowed from MUI
-                    container spacing={2}
-                    alignItems="center"
-                >
-                    <Grid item xs={4}>
-                        <img className="img-style" src={props.img}/>
-                    </Grid>
-                    <Grid item xs={8}>
-                        <h2>{props.title}</h2>
-                        <p>By {props.author}</p>
-                    </Grid>
-                    <Grid item xs={12}>                
-                        <div className="summary" dangerouslySetInnerHTML={{ __html: props.body}}/>
-                        <Link to={props.url}>Learn More</Link>
-                        <p>{props.date}</p>               
-                    </Grid>
-                </Grid> */}
             </section>
         );
     }

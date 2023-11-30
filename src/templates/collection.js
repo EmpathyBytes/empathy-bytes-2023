@@ -9,14 +9,14 @@ import "../styles/fonts.css"
  * Functional Collection Component
  * This function will find all the collection components on the drupal site and create a page
  * on the gatsby site for each component. This is the page accessed when
- * the Learn More button is clicked on a card.
+ * the card component in clicked.
  */
 
 // TODO: Move this styling to a separate file 
 
 const container = {
-    padding: "6% 5% 6% 5%",
-    paddingTop: 120,
+    padding: "5% 5%",
+    // paddingTop: "10%",
     ["font-family"]: 'Roboto',
 };
 

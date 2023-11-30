@@ -1,16 +1,14 @@
-import React, { useState, Component } from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import All from "../images/people/fullTeam.jpg"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { graphql } from "gatsby";
-
 
 import "../styles/about.css"
 import "../styles/all.css"
 import AboutComponent from "../components/aboutComponent"
 
-
-import Grid from '@mui/material/Unstable_Grid2';
+import Grid from '@mui/material/Grid';
 
 function AboutPage({ data }) {
 
