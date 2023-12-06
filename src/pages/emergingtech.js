@@ -7,8 +7,8 @@ import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
 
 import BuzzPlaque from "../components/canvas/buzzplaque";
-//import Football from "../components/canvas/football";
-//import Sweater from "../components/canvas/tSweater";
+import Football from "../components/canvas/football";
+import Sweater from "../components/canvas/tSweater";
 import Converse from "../components/canvas/rightconverse";
 
 import Grid from '@mui/material/Unstable_Grid2';
@@ -109,7 +109,7 @@ function EmergingTech() {
                         </Canvas>
                     </Grid>
 
-                        <Grid xs={6} className="vr-container-2 b-2">
+                        <Grid xs={6} className="vr-container-1 b-2">
                             <Canvas>
                                 <Suspense>
                                     <Converse scale={6} />
@@ -138,6 +138,42 @@ function EmergingTech() {
                     <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
                         <h1>Football</h1>
                     </Grid>
+
+                    {/* Loading 3D Models */}
+                    <Grid xs={6} className="vr-container-2 b-1">
+                        {/* I would recommend following this structure for importing future models - Jacob */}
+                        <Canvas>
+                            <Suspense>
+                                <Sweater scale={3.5} />
+
+                                {/*PLEASE READ (6/10/2023)
+                                    There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
+                                    For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
+                                - Jacob Amin */}
+
+                                {/* <Environment /> */}
+                                <ambientLight />
+                                <OrbitControls />
+                            </Suspense>
+                        </Canvas>
+                    </Grid>
+
+                        <Grid xs={6} className="vr-container-2 b-2">
+                            <Canvas>
+                                <Suspense>
+                                    <Football scale={6} />
+
+                                    {/*PLEASE READ (6/10/2023)
+                                        There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
+                                        For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
+                                    - Jacob Amin */}
+
+                                    {/* <Environment /> */}
+                                    <ambientLight />
+                                    <OrbitControls />
+                                </Suspense>
+                            </Canvas>
+                        </Grid>
 
                 </Grid>
 
