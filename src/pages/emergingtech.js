@@ -87,15 +87,6 @@ function EmergingTech() {
                     <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
                         <h1>Buzz's Right Converse</h1>
                     </Grid>
-
-                    <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
-                        <h1>Sweater</h1>
-                    </Grid>
-
-                    <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
-                        <h1>Football</h1>
-                    </Grid>
-
                 
 
                     {/* Loading 3D Models */}
@@ -133,6 +124,15 @@ function EmergingTech() {
                             </Suspense>
                         </Canvas>
                     </Grid>
+
+                    <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
+                        <h1>Sweater</h1>
+                    </Grid>
+
+                    <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
+                        <h1>Football</h1>
+                    </Grid>
+
 
                     <Grid xs={6} className="vr-container-3 b-3">
                         <Canvas>
