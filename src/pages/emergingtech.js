@@ -22,7 +22,7 @@ function EmergingTech() {
     return(
         <Layout>
             <div className="full-container-experiences">
-                <Grid container spacing={2} className="">
+                <Grid container spacing={4} className="">
                     <div className="grid-margins-experiences">
                         <Grid xs={12}>
                             <h1 className="header-experiences">The Emerging Technologies Team</h1>
