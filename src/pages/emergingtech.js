@@ -22,7 +22,7 @@ function EmergingTech() {
     return(
         <Layout>
             <div className="full-container-experiences">
-                <Grid container spacing={2} className="">
+                <Grid container spacing={4} className="">
                     <div className="grid-margins-experiences">
                         <Grid xs={12}>
                             <h1 className="header-experiences">The Emerging Technologies Team</h1>
@@ -117,56 +117,56 @@ function EmergingTech() {
                         </Canvas>
                     </Grid>
 
-                        <Grid xs={6} className="vr-container-1 b-2">
-                            <Canvas>
-                                <Suspense>
-                                    <Converse scale={6} />
+                    <Grid xs={6} className="vr-container-2 b-2">
+                        <Canvas>
+                            <Suspense>
+                                <Converse scale={6} />
 
-                                    {/*PLEASE READ (6/10/2023)
-                                        There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
-                                        For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
-                                    - Jacob Amin */}
+                                {/*PLEASE READ (6/10/2023)
+                                    There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
+                                    For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
+                                - Jacob Amin */}
 
-                                    {/* <Environment /> */}
-                                    <ambientLight />
-                                    <OrbitControls />
-                                </Suspense>
-                            </Canvas>
-                        </Grid>
+                                {/* <Environment /> */}
+                                <ambientLight />
+                                <OrbitControls />
+                            </Suspense>
+                        </Canvas>
+                    </Grid>
 
-                        <Grid xs={6} className="vr-container-1 b-3">
-                            <Canvas>
-                                <Suspense>
-                                    <Sweater scale={3} />
+                    <Grid xs={6} className="vr-container-3 b-3">
+                        <Canvas>
+                            <Suspense>
+                                <CSweater scale={6} />
 
-                                    {/*PLEASE READ (6/10/2023)
-                                        There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
-                                        For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
-                                    - Jacob Amin */}
+                                {/*PLEASE READ (6/10/2023)
+                                    There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
+                                    For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
+                                - Jacob Amin */}
 
-                                    {/* <Environment /> */}
-                                    <ambientLight />
-                                    <OrbitControls />
-                                </Suspense>
-                            </Canvas>
-                        </Grid>
+                                {/* <Environment /> */}
+                                <ambientLight />
+                                <OrbitControls />
+                            </Suspense>
+                        </Canvas>
+                    </Grid>
 
-                        <Grid xs={6} className="vr-container-1 b-4">
-                            <Canvas>
-                                <Suspense>
-                                    <Football scale={3} />
+                    <Grid xs={6} className="vr-container-4 b-4">
+                        <Canvas>
+                            <Suspense>
+                                <Football scale={6} />
 
-                                    {/*PLEASE READ (6/10/2023)
-                                        There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
-                                        For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
-                                    - Jacob Amin */}
+                                {/*PLEASE READ (6/10/2023)
+                                    There is a compatibility issue with this Environment component and the new version of three.js, I think it should be resolved soon though.
+                                    For now, I have inlcuded an ambientLight component instead. When this issue is resolved, feel free to add the Environment component back in.
+                                - Jacob Amin */}
 
-                                    {/* <Environment /> */}
-                                    <ambientLight />
-                                    <OrbitControls />
-                                </Suspense>
-                            </Canvas>
-                        </Grid>
+                                {/* <Environment /> */}
+                                <ambientLight />
+                                <OrbitControls />
+                            </Suspense>
+                        </Canvas>
+                    </Grid>
 
                 </Grid>
 
