@@ -129,6 +129,19 @@ function EmergingTech() {
 
                 </Grid>
 
+                <Grid container spacing={2} className="bg-2">
+                    
+                    <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
+                        <h1>Sweater</h1>
+                    </Grid>
+
+                    <Grid xs={6} container className="" alignItems="center" justifyContent="center" direction="column">
+                        <h1>Football</h1>
+                    </Grid>
+
+                </Grid>
+
+
 
                 <Grid container spacing={2} className="" style={{padding: "2% 0 2% 0"}}>
                     <Grid xs={6} container className="right-align-experiences" alignItems="center" justifyContent="center" direction="column">
